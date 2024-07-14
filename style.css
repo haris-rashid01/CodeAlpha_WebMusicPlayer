@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #444;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.navbar .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navbar .nav-links button a{
+    border: 2px solid #fff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .nav-links button:hover {
+    background-color: #fff;
+    color: #444;
+}
+
+.welcome-heading {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.welcome-heading h2 {
+    color: #333;
+    font-size: 28px;
+    margin: 0;
+}
+
+.music-player {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    max-width: 100%;
+}
+
+.header {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.playlist {
+    background-color: #555;
+    padding: 10px;
+}
+
+#search {
+    width: calc(100% - 20px);
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#playlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+#playlist li {
+    padding: 10px;
+    background-color: #666;
+    color: #fff;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#playlist li:hover, #playlist li.active {
+    background-color: #777;
+}
+
+.controls {
+    background-color: #444;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+button:disabled {
+    color: #888;
+    cursor: not-allowed;
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+}
+
+.volume-control i {
+    color: #fff;
+    margin: 0 5px;
+}
+
+#volume {
+    -webkit-appearance: none;
+    width: 100px;
+    background-color: #888;
+    border-radius: 5px;
+    height: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+#volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
